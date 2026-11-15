@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><title>海外煤炭周报｜手机版 2026-11-13</title><style>
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
 .mobile-navigation{display:flex;gap:7px;flex-wrap:wrap;padding:12px 0;margin-bottom:8px;border-bottom:1px solid #d7dde8}
@@ -29,4 +30,73 @@ canvas{touch-action:pan-y}.edit-toolbar,.table-toolbar,#save-edits{display:none!
  .chart-tip,.supply-chart-tip,.india-chart-tip{max-width:calc(100vw - 16px)!important;max-height:65vh;overflow-y:auto;font-size:12px!important}
  .mobile-country-links{grid-template-columns:repeat(2,minmax(0,1fr))}.mobile-country-links a{font-size:16px;padding:18px 12px}
 }
-</style></head><body class="mobile-landing"><h1>海外煤炭周报</h1><p>整理日期：2026-11-13。各指标使用其实际数据日期。</p><p>选择国家按需加载。图表支持点击图例和触摸查看数值；宽表支持左右滑动。</p><div class="mobile-country-links"><a href="australia.html">澳大利亚</a><a href="us.html">美国</a><a href="indonesia.html">印尼</a><a href="mongolia.html">蒙古</a><a href="south-africa-colombia.html">南非＋哥伦比亚</a><a href="india.html">印度</a><a href="japan-korea.html">日韩</a><a href="europe.html">欧洲</a><a href="china.html">中国</a><a href="weather.html">全球天气</a></div><p><a href="desktop.html">打开完整桌面版</a></p><p id="public-pdf-download"><a href="overseas-coal-weekly-20261113.pdf">下载PDF（约51MB）</a></p></body></html>
+</style><style id="portrait-report-style">.portrait-table-cards{display:none}
+#portrait-image-viewer{display:none}
+@media(max-width:760px){
+ html,body{box-sizing:border-box;width:100%;margin:0!important;overflow-x:clip;-webkit-text-size-adjust:100%}
+ main,.layout,.report-panel,.subpanel{min-width:0!important;max-width:100%!important;box-sizing:border-box}
+ main{padding:0 9px 24px!important}.subpanel{padding:10px 6px!important}
+ #report-sticky-topbar{background:#fffdf9;position:sticky!important;top:0;z-index:60}
+ #report-sticky-topbar header{padding:7px 0!important;margin:0!important}
+ header h1{font-size:19px!important;line-height:1.4!important;margin:4px 0 7px!important;white-space:normal!important}
+ .panel-tabs{display:flex!important;flex-wrap:wrap!important;gap:4px!important;padding:6px 0!important;margin:0!important;position:static!important;overflow:visible!important}
+ .panel-tabs .panel-tab{flex:1 1 auto!important;min-width:0!important;width:auto!important;font-size:12px!important;padding:7px 5px!important;text-align:center;white-space:nowrap}
+ .mobile-section-directory,.mobile-directory{position:static!important;padding:10px!important;margin:9px 0!important}
+ .mobile-section-directory summary,.mobile-directory summary{font-size:14px!important;line-height:1.5}
+ .summary-module,.summary-module .report,.summary-module .capture{width:100%!important;min-width:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;margin-left:0!important;margin-right:0!important}
+ .summary-module .driver,.summary-module .strategies{width:100%!important;max-width:100%!important;box-sizing:border-box}
+ .summary-module .driver{padding:12px!important;margin:10px 0 16px!important;font-size:16px!important;line-height:1.8!important}
+ .summary-module .driver .edit{font-size:16px!important;line-height:1.8!important}
+ .summary-module .sectionbar{max-width:100%!important;margin:4px 0 12px!important}.summary-module .sectionbar h2{font-size:22px!important}
+ html body main .summary-module .capture>table{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;border:0!important;table-layout:auto!important;font-size:16px!important}
+ .summary-module table colgroup{display:none!important}.summary-module table thead,.summary-module table tbody{display:block!important;width:100%!important}
+ .summary-module table thead tr{display:none!important}.summary-module table thead tr:first-child{display:block!important}
+ .summary-module table thead .tabletitle{display:block!important;padding:12px 8px!important;width:auto!important;font-size:20px!important;letter-spacing:1px;line-height:1.5!important}
+ .summary-module table tbody tr{display:block!important;border:1px solid #b6d3e4!important;border-radius:5px;margin:12px 0!important;overflow:hidden;background:white}
+ .summary-module table tbody th.group{display:none!important}
+ .summary-module table tbody th.item{display:block!important;width:auto!important;font-size:17px!important;font-weight:700!important;text-align:left!important;padding:10px 12px!important;background:#eaf5fd!important;border:0!important}
+ .summary-module th.item::before{content:attr(data-portrait-group) ' / ';font-size:14px;color:#537b94;font-weight:400}
+ .summary-module table tbody td{display:block!important;width:auto!important;min-width:0!important;border:0!important;border-top:1px solid #e3edf4!important;padding:11px 12px!important;text-align:left!important;overflow-wrap:anywhere;line-height:1.8!important}
+ .summary-module table tbody td::before{content:attr(data-portrait-label);display:block;font:12px/1.5 'Microsoft YaHei',sans-serif;color:#537b94;margin:0 0 5px}
+ .summary-module table tbody td.bias{background:#f7fbfe!important}.summary-module table tbody .edit{font-size:16px!important;line-height:1.8!important;min-height:0!important;outline:0!important}
+ .summary-module .strategies{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+ .summary-module .strategies article{padding:13px!important;min-width:0!important}.summary-module .strategy-title{font-size:21px!important;margin:18px 0 12px!important}
+ .summary-module .strategies .edit{font-size:16px!important;line-height:1.8!important}
+ .portrait-source-table,.portrait-source-wrapper,.portrait-table-hint{display:none!important}
+ .portrait-table-cards{display:block!important;width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+ .portrait-table-card{border:1px solid #d0dfe9;border-radius:5px;background:#fff;margin:12px 0;padding:12px;box-sizing:border-box;min-width:0}
+ .portrait-table-card h5{font-size:16px!important;line-height:1.6!important;margin:0 0 10px!important;color:#173b61;overflow-wrap:anywhere}
+ .portrait-table-card dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0}
+ .portrait-table-card dl>div{min-width:0;background:#f2f7fb;padding:8px;border-radius:4px}
+ .portrait-table-card dt{font-size:12px;line-height:1.5;color:#63788b;overflow-wrap:anywhere}
+ .portrait-table-card dd{font-size:16px;line-height:1.65;margin:4px 0 0;overflow-wrap:anywhere}
+ .portrait-table-card .cell-observation-date{font-size:12px!important;display:block}
+ .portrait-table-section{font-size:17px!important;line-height:1.6!important;margin:16px 0 8px!important}
+ .asset-gallery,.report-image-list,.report-image-list.single-wide,.chart-grid,.seasonal-grid,.supply-grid,.oce-season-grid,.india-chart-grid,.registered-chart-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;width:100%!important;min-width:0!important;gap:12px!important}
+ figure,.report-image-card,.asset-card,.chart-card,.report-card{min-width:0!important;max-width:100%!important;width:100%!important;margin:0!important;padding:0!important;box-sizing:border-box;height:auto!important;min-height:0!important}
+ .image-zoom,.image-preview,.img-button,button:has(>img){display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;padding:0!important;margin:0!important;min-height:0!important;border:0!important;background:transparent!important}
+ main img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;cursor:zoom-in}
+ main canvas{max-width:100%!important;height:auto!important}figcaption{font-size:13px!important;line-height:1.6!important;margin:7px 0 12px!important}
+ .mobile-table-scroll,.supply-table-scroll,.oce-table-scroll,.weather-table-scroll,.table-scroll{min-width:0!important;max-width:100%!important}
+ #portrait-image-viewer.open{display:flex!important;position:fixed;inset:0;z-index:10000;background:#13202f;flex-direction:column;padding-top:env(safe-area-inset-top);box-sizing:border-box}
+ #portrait-image-viewer .portrait-viewer-bar{display:flex;align-items:center;justify-content:space-between;padding:10px;gap:10px;background:#172c43;color:white;font:14px sans-serif;flex:0 0 auto}
+ #portrait-image-viewer button{padding:8px 13px;border:1px solid #7593ac;background:#fff;color:#173b61;border-radius:4px;font:14px sans-serif}
+ #portrait-image-viewer .portrait-viewer-scroll{overflow:auto;flex:1;min-height:0;touch-action:pan-x pan-y pinch-zoom;overscroll-behavior:contain}
+ #portrait-image-viewer img{display:block;max-width:none!important;max-height:none!important;height:auto!important;margin:auto;object-fit:contain;touch-action:pan-x pan-y pinch-zoom}
+}
+
+</style></head><body class="mobile-landing"><h1>海外煤炭周报</h1><p>整理日期：2026-11-13。各指标使用其实际数据日期。</p><p>选择国家按需加载。图表支持点击图例和触摸查看数值；宽表支持左右滑动。</p><div class="mobile-country-links"><a href="australia.html">澳大利亚</a><a href="us.html">美国</a><a href="indonesia.html">印尼</a><a href="mongolia.html">蒙古</a><a href="south-africa-colombia.html">南非＋哥伦比亚</a><a href="india.html">印度</a><a href="japan-korea.html">日韩</a><a href="europe.html">欧洲</a><a href="china.html">中国</a><a href="weather.html">全球天气</a></div><p><a href="desktop.html">打开完整桌面版</a></p><p id="public-pdf-download"><a href="overseas-coal-weekly-20261113.pdf">下载PDF（约51MB）</a></p><script id="portrait-report-script">(()=>{
+ const box=document.createElement('div');box.id='portrait-image-viewer';box.setAttribute('role','dialog');box.setAttribute('aria-label','图片预览');
+ box.innerHTML='<div class="portrait-viewer-bar"><span>图片预览</span><button type="button" class="portrait-size">放大</button><button type="button" class="portrait-close">关闭</button></div><div class="portrait-viewer-scroll"><img alt=""></div>';
+ document.body.append(box);const image=box.querySelector('img'),scroller=box.querySelector('.portrait-viewer-scroll'),size=box.querySelector('.portrait-size');let enlarged=false,oldOverflow='';
+ function fit(){enlarged=false;image.style.width='100%';size.textContent='放大';scroller.scrollTo(0,0)}
+ function zoom(){if(enlarged){fit();return}enlarged=true;image.style.width=Math.max(image.naturalWidth,innerWidth*2)+'px';size.textContent='适宽'}
+ function close(){box.classList.remove('open');document.body.style.overflow=oldOverflow;image.removeAttribute('src')}
+ size.addEventListener('click',zoom);image.addEventListener('click',zoom);box.querySelector('.portrait-close').addEventListener('click',close);
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+ document.addEventListener('click',event=>{
+  if(innerWidth>760)return;const target=event.target.closest('main img');if(!target||!target.getAttribute('src'))return;
+  event.preventDefault();event.stopImmediatePropagation();image.src=target.currentSrc||target.src;image.alt=target.alt||'';oldOverflow=document.body.style.overflow;document.body.style.overflow='hidden';box.classList.add('open');fit();
+ },true);
+})();
+</script></body></html>
