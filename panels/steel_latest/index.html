@@ -292,7 +292,7 @@ document.addEventListener('selectionchange',()=>{const s=getSelection();if(s.ran
 document.querySelectorAll('[data-command]').forEach(b=>{b.onmousedown=e=>e.preventDefault();b.onclick=()=>{if(range){const s=getSelection();s.removeAllRanges();s.addRange(range);}document.execCommand(b.dataset.command,false,b.dataset.value||null);save();};});
 document.getElementById('save').onclick=save;
 document.getElementById('export').onclick=()=>{save();const clone=document.documentElement.cloneNode(true);clone.querySelector('#status').textContent='';const blob=new Blob(['<!DOCTYPE html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='钢材周报_编辑版.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-</script><script>const priceCharts=[];const priceMap=new Map(priceCharts.map(x=>[x.id,x]));const steelSeasonColors={2021:'#e5b700',2022:'#999999',2023:'#73b94c',2024:'#003b8e',2025:'#c28fc2',2026:'#e60012'};
+</script><script>const priceCharts=[];const priceMap=new Map(priceCharts.map(x=>[x.id,x]));const steelSeasonColors={2021:'#7030a0',2022:'#5b9bd5',2023:'#a5a5a5',2024:'#ffc000',2025:'#000000',2026:'#ff0000'};
 function priceDay(d){return (Date.parse('2024-'+d.slice(5))-Date.parse('2024-01-01'))/86400000/366}
 function tightPriceAxis(values){
  if(!values.length)return {lo:0,hi:1,tick:.2};
