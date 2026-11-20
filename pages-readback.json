@@ -1,0 +1,30 @@
+[
+  {
+    "path": "reports/steel.html",
+    "loader_verified": true,
+    "compressed_asset_verified": true,
+    "white_red_style_present": true,
+    "bytes": 6182332
+  },
+  {
+    "path": "reports/ferroalloy.html",
+    "loader_verified": true,
+    "compressed_asset_verified": true,
+    "white_red_style_present": true,
+    "bytes": 852666
+  },
+  {
+    "path": "panels/steel_latest/index.html",
+    "loader_verified": true,
+    "compressed_asset_verified": true,
+    "white_red_style_present": true,
+    "bytes": 6157442
+  },
+  {
+    "path": "panels/ferroalloy_weekly_20261113/index.html",
+    "loader_verified": true,
+    "compressed_asset_verified": true,
+    "white_red_style_present": true,
+    "bytes": 838374
+  }
+]
