@@ -138,7 +138,18 @@ window.addEventListener('DOMContentLoaded',function(){
   const tip=document.createElement('div');
   tip.className='global-chart-tooltip';
   document.body.appendChild(tip);
-  function show(ev, html){tip.innerHTML=html; tip.style.display='block'; tip.style.left=(ev.clientX+14)+'px'; tip.style.top=(ev.clientY+12)+'px';}
+  function show(ev, html){
+    if(tip.innerHTML!==html) tip.innerHTML=html;
+    tip.style.display='block';
+    const margin=8, gap=14;
+    const viewport=document.documentElement;
+    const {width,height}=tip.getBoundingClientRect();
+    const right=ev.clientX+gap, below=ev.clientY+gap;
+    const left=right+width<=viewport.clientWidth-margin ? right : ev.clientX-gap-width;
+    const top=below+height<=viewport.clientHeight-margin ? below : ev.clientY-gap-height;
+    tip.style.left=Math.max(margin,Math.min(left,viewport.clientWidth-margin-width))+'px';
+    tip.style.top=Math.max(margin,Math.min(top,viewport.clientHeight-margin-height))+'px';
+  }
   function hide(){tip.style.display='none';}
   function setTipNode(node, html){node.dataset.tip=html;}
   function bindDelegatedTips(root){
@@ -873,7 +884,7 @@ body.macro-with-sidebar{padding-left:258px;scroll-padding-top:16px}
 .interactive-data-table.large th,.interactive-data-table.large td{padding:10px 14px}
 .interactive-data-table tr:first-child th{background:#f1f5f9;font-weight:700}
 .interactive-data-table tr:nth-child(even){background:#fafcff}
-.global-chart-tooltip{display:none;position:fixed;z-index:9999;background:#222;color:#fff;border-radius:4px;padding:8px 10px;font-size:15px;line-height:1.5;pointer-events:none;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.global-chart-tooltip{display:none;position:fixed;z-index:9999;box-sizing:border-box;width:max-content;max-width:min(440px,calc(100% - 16px));overflow-wrap:anywhere;background:#222;color:#fff;border-radius:4px;padding:8px 10px;font-size:15px;line-height:1.5;pointer-events:none;box-shadow:0 4px 16px rgba(0,0,0,.18)}
 .chart-loading,.empty-chart{min-height:96px;display:flex;align-items:center;justify-content:center;color:#7b8794;background:#f7f9fc;border:1px dashed #d8e1ec;font-size:18px}
 .interactive-timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
 .timeline-item{border-left:4px solid #c9463c;background:#f7f9fc;padding:10px 12px;display:grid;gap:3px}
